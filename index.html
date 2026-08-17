@@ -18,7 +18,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -44,10 +44,8 @@
 
   <section class="hero" id="top">
     <div class="hero-bg" aria-hidden="true">
-      <svg class="mountains-bg" viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="ridge ridge-1" d="M0,400 L0,260 L120,180 L230,240 L340,120 L460,220 L560,90 L680,210 L790,140 L900,230 L1020,150 L1140,240 L1260,170 L1360,230 L1440,190 L1440,400 Z"/>
-        <path class="ridge ridge-2" d="M0,400 L0,320 L140,250 L260,300 L380,210 L500,290 L620,190 L740,280 L860,220 L980,300 L1100,240 L1220,310 L1340,260 L1440,300 L1440,400 Z"/>
-      </svg>
+      <img src="assets/photos/hero-serna-man.jpg" alt="" class="hero-photo">
+      <div class="hero-scrim"></div>
     </div>
     <div class="wrap hero-content">
       <p class="hero-kicker">Майкоп &middot; Адыгея &middot; Кавказ</p>
@@ -58,18 +56,22 @@
         <a href="#tracks" class="btn btn-primary">Слушать треки</a>
         <a href="#video" class="btn btn-ghost">Смотреть клипы</a>
       </div>
-      <div class="platform-links">
-        <a href="https://music.yandex.ru/artist/26393732" class="platform-link" data-platform="yandex" target="_blank" rel="noopener">Яндекс Музыка</a>
-        <a href="https://vk.ru/club240515451" class="platform-link" data-platform="vk-community" target="_blank" rel="noopener">VK-сообщество</a>
-        <a href="https://youtube.com/@beat_jigit" class="platform-link" data-platform="youtube" target="_blank" rel="noopener">YouTube</a>
-      </div>
     </div>
   </section>
 
-  <div class="divider" aria-hidden="true">
+  <div class="divider divider-hero" aria-hidden="true">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,120 L0,70 L160,20 L300,60 L460,10 L620,55 L780,15 L940,58 L1100,22 L1260,60 L1440,25 L1440,120 Z"/>
     </svg>
+  </div>
+
+  <div class="trust-strip">
+    <div class="wrap trust-strip-inner">
+      <span class="trust-strip-label">Слушать на:</span>
+      <a href="https://music.yandex.ru/artist/26393732" data-platform="yandex" target="_blank" rel="noopener">Яндекс Музыка</a>
+      <a href="https://vk.ru/club240515451" data-platform="vk-community" target="_blank" rel="noopener">VK-сообщество</a>
+      <a href="https://youtube.com/@beat_jigit" data-platform="youtube" target="_blank" rel="noopener">YouTube</a>
+    </div>
   </div>
 
   <section class="tracks" id="tracks">
@@ -80,10 +82,8 @@
       <div class="track-list">
 
         <article class="track-card">
-          <div class="track-cover" aria-hidden="true">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="10,80 30,40 45,60 60,25 80,55 90,80" />
-            </svg>
+          <div class="track-cover">
+            <img src="assets/photos/serna-man-portrait.jpg" alt="Серна-мэн">
           </div>
           <div class="track-info">
             <div class="track-heading">
@@ -144,27 +144,30 @@
     </div>
   </section>
 
-  <div class="divider divider-flip" aria-hidden="true">
+  <div class="divider divider-into-narts" aria-hidden="true">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,120 L0,70 L160,20 L300,60 L460,10 L620,55 L780,15 L940,58 L1100,22 L1260,60 L1440,25 L1440,120 Z"/>
     </svg>
   </div>
 
-  <section class="narts" id="narts">
+  <section class="narts section-dark" id="narts">
     <div class="wrap narts-inner">
       <div class="narts-text">
         <h2 class="section-title">Нарты — эпос гор</h2>
         <p>Нартский эпос — древнее сказание народов Кавказа, включая адыгов: истории о героях-великанах, живших среди гор, побеждавших чудовищ и споривших с богами. Это общее культурное ядро для многих кавказских народов — адыгов, абхазов, осетин, вайнахов и других.</p>
         <p>Для «Бит Джигита» нарты — не музейный экспонат, а живой источник образов: горная эпика, герои-пародии вроде Серна-мэна, юмор и величие рядом друг с другом — так же, как в самих сказаниях соседствуют подвиг и ирония.</p>
       </div>
-      <div class="narts-visual" aria-hidden="true">
-        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="peak peak-back" points="20,260 90,90 160,220 200,140 280,260" />
-          <polygon class="peak peak-front" points="0,270 70,150 130,240 190,120 300,270" />
-        </svg>
+      <div class="narts-visual">
+        <img src="assets/photos/serna-man-narts.jpg" alt="Серна-мэн среди гор">
       </div>
     </div>
   </section>
+
+  <div class="divider divider-out-narts" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,120 L0,70 L160,20 L300,60 L460,10 L620,55 L780,15 L940,58 L1100,22 L1260,60 L1440,25 L1440,120 Z"/>
+    </svg>
+  </div>
 
   <section class="video" id="video">
     <div class="wrap">
@@ -186,12 +189,6 @@
       </div>
     </div>
   </section>
-
-  <div class="divider" aria-hidden="true">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,120 L0,70 L160,20 L300,60 L460,10 L620,55 L780,15 L940,58 L1100,22 L1260,60 L1440,25 L1440,120 Z"/>
-    </svg>
-  </div>
 
   <section class="contact" id="contact">
     <div class="wrap contact-inner">
@@ -222,6 +219,12 @@
   </section>
 
 </main>
+
+<div class="divider divider-into-footer" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,120 L0,70 L160,20 L300,60 L460,10 L620,55 L780,15 L940,58 L1100,22 L1260,60 L1440,25 L1440,120 Z"/>
+  </svg>
+</div>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
